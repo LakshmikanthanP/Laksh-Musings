@@ -3,12 +3,14 @@
   	<title>
   		{{ page.title}}
   	</title>
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/styles.css">
+    <base href="{{site.baseurl}}" />
+
+    <link rel="stylesheet" type="text/css" href="/styles.css">
   </HEAD>
   <body>
   	<nav>
-      <a href="{{ site.baseurl }}/index.html">Home</a>
-      <a href="{{ site.baseurl }}/contact.html">Contact</a>
+      <a href="/index.html">Home</a>
+      <a href="/contact.html">Contact</a>
     </nav>
     {{ content }}
 
