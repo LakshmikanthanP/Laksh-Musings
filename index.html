@@ -1,5 +1,22 @@
-<html>
-  <body>
-    Welcome to my page
-  </body>  
-</html>
+---
+layout: default
+title: Introduction
+
+---
+
+<h1>
+	My page
+</h1>
+<p>
+ Welcome to my page.. now using Jekyll   	
+</p>
+
+<p>My first dotnet blog</p>
+
+<ul>
+{% for post in site.posts %}
+	<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+	
+</ul>
+
