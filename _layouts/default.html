@@ -1,21 +1,40 @@
-<html>
-  <HEAD>
-  	<title>
-  		{{ page.title}}
-  	</title>
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/styles.css">
-  </HEAD>
-  <body>
-  	<nav>
-      <a href="{{ site.baseurl }}/index.html">Home</a>
-      <a href="{{ site.baseurl }}/contact.html">Contact</a>
-    </nav>
-    {{ content }}
+---
+layout: compress
+---
 
-    <hr>
-    <footer>
-      Thanks a lot for having a peek at the page here !!
-    </footer>
-    
-    </body>  
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
+<body>
+  {% include navbar.html %}
+  {% include showcase.html %}
+  {% include about.html %}
+  {% include contact.html %}
+  <!--Footer begins here-->
+  {% include footer.html %}
+</body>
+<script>
+  window.addEventListener("scroll", function (event) {
+    var scroll = this.scrollY;
+    var item = document.getElementsByClassName('navbar-item');
+    /* console.log(scroll); */
+    if (scroll < 565) {
+      item[1].classList.add('is-active');
+      item[2].classList.remove('is-active');
+      item[3].classList.remove('is-active');
+    }
+    if (scroll > 565 && scroll < 1130) {
+      item[1].classList.remove('is-active');
+      item[2].classList.add('is-active');
+      item[3].classList.remove('is-active');
+    }
+    if (scroll > 1130) {
+      item[1].classList.remove('is-active');
+      item[2].classList.remove('is-active');
+      item[3].classList.add('is-active');
+    }
+  });
+</script>
+
 </html>
