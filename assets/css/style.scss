@@ -43,13 +43,7 @@ a.navbar-item.is-active {
     background: -webkit-linear-gradient(0deg, #fffffc, #fffffc);
     background: linear-gradient(0deg, #fffffc, #fffffc);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#000000", GradientType=1);
-    filter:(0.15rem);
-    background-image: url({{site.heroimage}});
-    background-position: top 30% right 70%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment:fixed;
-    
+    filter:(0.15rem); 
     &::before {
         top: 0px;
         right: 0px;
@@ -59,6 +53,14 @@ a.navbar-item.is-active {
         opacity: 0.95;
         content: "";
     }
+}
+.hero-body
+{
+    background-image: url({{site.heroimage}});
+    background-position: top 30% right 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
 }
 .title {
     margin: auto 0.75rem!important;
