@@ -37,6 +37,24 @@ a.navbar-item.is-active {
     border-color: grey;
 }
 
+@media screen and (min-width: 800px) {
+    .hero{
+      height: 600px; 
+    }
+    
+    // .img{
+    //   height: 50%;  
+    // }
+    
+    // .img-1,
+    // .img-4 {
+    //   width: 24%;
+    // }
+    // .img-2,
+    // .img-3 {
+    //   width: 70%;
+    // }
+  }
 
 #hero {
     background:#fffffc;
@@ -48,7 +66,7 @@ a.navbar-item.is-active {
     &::before {
         filter:(0.15rem);
         background-image: url({{site.heroimage}});
-        background-position: top 30% right 70%;
+        //background-position: top 30% right 70%;
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
