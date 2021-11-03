@@ -37,15 +37,6 @@ a.navbar-item.is-active {
     border-color: grey;
 }
 
- .header-image { 
-    background-image: url({{site.heroimage}});
-    background-position: center center; 
-     background-repeat: no-repeat;
-      background-attachment: fixed; 
-      background-size: cover;
-     background-color: #999; }
-     
-
 #hero {
     background:#fffffc;
     background: -moz-linear-gradient(0deg, #7d8085,#fffffc);
