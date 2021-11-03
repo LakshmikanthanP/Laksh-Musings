@@ -37,6 +37,18 @@ a.navbar-item.is-active {
     border-color: grey;
 }
 
+ .header-image { 
+    background-image: url({{site.heroimage}});
+    background-position: center center; 
+     background-repeat: no-repeat;
+      background-attachment: fixed; 
+      background-size: cover;
+     background-color: #999; }
+     
+.has-bg-img {
+    background-image: url({{site.heroimage}});
+    background-size:cover; }
+
 #hero {
     background:#fffffc;
     background: -moz-linear-gradient(0deg, #7d8085,#fffffc);
@@ -44,6 +56,13 @@ a.navbar-item.is-active {
     background: linear-gradient(0deg, #fffffc, #fffffc);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#000000", GradientType=1);
     filter:(0.15rem); 
+
+    // background-image: url({{site.heroimage}});
+    // background-position: center center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-attachment:fixed;
+
     &::before {
         top: 0px;
         right: 0px;
@@ -54,14 +73,7 @@ a.navbar-item.is-active {
         content: "";
     }
 }
-.hero-body
-{
-    background-image: url({{site.heroimage}});
-    background-position: top 30% right 70%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-attachment:fixed;
-}
+
 .title {
     margin: auto 0.75rem!important;
 }
