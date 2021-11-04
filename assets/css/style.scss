@@ -446,6 +446,11 @@ a.navbar-item.is-active {
     margin-top: 28%;
     margin-left: 50%;
     margin-bottom:20%;
+    @media(max-width: 600px)
+    {    
+        margin-bottom:35%;
+
+    }
   }
   .aboutme
   {
@@ -463,6 +468,10 @@ a.navbar-item.is-active {
     transform: rotate(45deg);
     margin: -10px;
     animation: animate 2s infinite;
+    @media(max-width: 600px)
+    {    
+        display:none;
+    }
 }
 .arrow span:nth-child(2){
     animation-delay: -0.2s;
