@@ -466,14 +466,13 @@ a.navbar-item.is-active {
 }
   
   .containerarrow {
-     position:relative;
+     position:absolute;
     display: block;
     // align-items:center;
     // justify-content: center;
     // justify-content:flex-start;
-    // margin-top: -78%;
-    // margin-left: 50%;
-    // margin-bottom:-30%;
+    margin-top: -60%;
+    margin-left: 50%;
     // @media(max-width: 600px)
     // {    
     //     margin-bottom:25%;
