@@ -20,8 +20,12 @@
     max-width: 100%; 
     height: auto;
     position: relative;
-    display: inline-block;
+    //display: inline-block;
 } 
+.heroBanneBackground
+{
+    background-color: #d3d7dd;
+}
 
 a.navbar-item:hover,
 .navbar-link:hover {
